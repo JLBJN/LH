@@ -1,4 +1,4 @@
-
+https://www.123865.com/s/iWw9vd-98Yfv
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -67,6 +67,26 @@
         
         .btn-secondary:active {
             background-color: #d97706;
+        }
+        
+        .btn-backup {
+            background-color: #10b981;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .btn-backup:active {
+            background-color: #059669;
+        }
+
+        .btn-official {
+            background-color: #6366f1;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .btn-official:active {
+            background-color: #4f46e5;
         }
         
         .nav-link {
@@ -163,13 +183,16 @@
         
         /* 移动端优化 */
         @media (max-width: 640px) {
-            .btn-primary, .btn-secondary {
-                min-height: 48px;
-                min-width: 48px;
+            .btn-primary, .btn-secondary, .btn-backup, .btn-official {
+                min-height: 44px;
+                min-width: 44px;
+                padding-top: 0.5rem !important;
+                padding-bottom: 0.5rem !important;
+                font-size: 15px !important;
             }
             
             p, li {
-                font-size: 16px;
+                font-size: 15px;
             }
         }
         
@@ -188,11 +211,24 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
+        
+        /* 下载按钮组样式 - 优化间距 */
+        .download-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 6px; /* 缩小按钮间距 */
+        }
+        
+        /* 按钮内边距优化 */
+        .btn-primary, .btn-backup, .btn-official {
+            padding-top: 0.6rem !important;
+            padding-bottom: 0.6rem !important;
+        }
     </style>
 </head>
 <body>
     <!-- 导航栏 -->
-    <nav class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50 py-3 px-4">
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50 py-2 px-4"> <!-- 缩小导航栏上下内边距 -->
         <div class="container mx-auto flex justify-between items-center">
             <a href="#" class="flex items-center space-x-2">
                 <span class="text-xl font-bold text-dark">领航俱乐部</span>
@@ -211,32 +247,32 @@
         </div>
         
         <!-- 移动端菜单 -->
-        <div class="md:hidden hidden bg-white mt-3 py-4 px-6 rounded-b-lg shadow-md" id="mobile-menu">
-            <div class="flex flex-col space-y-4">
-                <a href="#home" class="text-dark hover:text-accent py-2 border-b border-gray-200">首页</a>
-                <a href="#services" class="text-dark hover:text-accent py-2 border-b border-gray-200">我们的服务</a>
-                <a href="#notice" class="text-dark hover:text-accent py-2 border-b border-gray-200">联系我们进群</a>
-                <a href="#download" class="text-dark hover:text-accent py-2">下载指南</a>
+        <div class="md:hidden hidden bg-white mt-2 py-3 px-5 rounded-b-lg shadow-md" id="mobile-menu"> <!-- 缩小移动端菜单内边距和间距 -->
+            <div class="flex flex-col space-y-3"> <!-- 缩小菜单选项间距 -->
+                <a href="#home" class="text-dark hover:text-accent py-1.5 border-b border-gray-200">首页</a> <!-- 缩小内边距 -->
+                <a href="#services" class="text-dark hover:text-accent py-1.5 border-b border-gray-200">我们的服务</a>
+                <a href="#notice" class="text-dark hover:text-accent py-1.5 border-b border-gray-200">联系我们进群</a>
+                <a href="#download" class="text-dark hover:text-accent py-1.5">下载指南</a>
             </div>
         </div>
     </nav>
 
     <!-- 英雄区 -->
-    <section id="home" class="min-h-screen flex items-center pt-16 hero-bg">
-        <div class="container mx-auto px-4 py-16 hero-content relative z-10">
+    <section id="home" class="min-h-screen flex items-center pt-14 hero-bg"> <!-- 缩小顶部内边距 -->
+        <div class="container mx-auto px-4 py-12 hero-content relative z-10"> <!-- 缩小上下内边距 -->
             <div class="flex flex-col items-center text-center">
-                <div class="mb-10">
-                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-dark">
+                <div class="mb-8"> <!-- 缩小底部间距 -->
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-dark"> <!-- 缩小标题底部间距 -->
                         欢迎加入<span class="text-accent">领航俱乐部</span>
                     </h1>
-                    <p class="text-base sm:text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    <p class="text-base sm:text-lg md:text-xl text-gray-600 mb-6 max-w-2xl mx-auto"> <!-- 缩小文本底部间距 -->
                         专业币圈社区，90%高胜率策略，多位大佬分析师，打造最强内群。
                     </p>
-                    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="#services" class="btn-primary py-3 px-8 rounded-lg text-center min-w-[160px] text-lg">
+                    <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-3"> <!-- 缩小按钮间距 -->
+                        <a href="#services" class="btn-primary py-2.5 px-7 rounded-lg text-center min-w-[160px] text-lg"> <!-- 缩小按钮内边距 -->
                             <i class="fas fa-th-list mr-2"></i>我们的服务
                         </a>
-                        <a href="#notice" class="btn-secondary py-3 px-8 rounded-lg text-center min-w-[160px] text-lg">
+                        <a href="#notice" class="btn-secondary py-2.5 px-7 rounded-lg text-center min-w-[160px] text-lg"> <!-- 缩小按钮内边距 -->
                             <i class="fas fa-bell mr-2"></i>联系我们进群
                         </a>
                     </div>
@@ -246,75 +282,75 @@
     </section>
 
     <!-- 我们的服务 -->
-    <section id="services" class="py-16 bg-white">
+    <section id="services" class="py-12 bg-white"> <!-- 缩小上下内边距 -->
         <div class="container mx-auto px-4">
-            <h2 class="section-title text-2xl sm:text-3xl font-bold text-center mb-8">
+            <h2 class="section-title text-2xl sm:text-3xl font-bold text-center mb-6"> <!-- 缩小标题底部间距 -->
                 <span class="text-dark">我们的服务</span>
             </h2>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"> <!-- 缩小卡片间距 -->
                 <!-- 服务卡片 1 -->
-                <div class="service-card card rounded-xl p-5 sm:p-6 shadow-sm">
-                    <div class="service-icon w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6 mx-auto sm:mx-0">
-                        <i class="fas fa-chart-line text-2xl sm:text-3xl"></i>
+                <div class="service-card card rounded-xl p-4 sm:p-5 shadow-sm"> <!-- 缩小卡片内边距 -->
+                    <div class="service-icon w-10 h-10 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mb-3 sm:mb-4 mx-auto sm:mx-0"> <!-- 缩小图标大小和间距 -->
+                        <i class="fas fa-chart-line text-xl sm:text-2xl"></i> <!-- 缩小图标大小 -->
                     </div>
-                    <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left text-dark">24小时实时策略</h3>
-                    <p class="text-gray-600 text-base">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2 text-center sm:text-left text-dark">24小时实时策略</h3> <!-- 缩小标题底部间距 -->
+                    <p class="text-gray-600 text-sm sm:text-base"> <!-- 缩小文本字号 -->
                         提供24小时免费实时策略单，日内高胜率短单策略，帮助您把握每一个机会。
                     </p>
                 </div>
                 
                 <!-- 服务卡片 2 -->
-                <div class="service-card card rounded-xl p-5 sm:p-6 shadow-sm">
-                    <div class="service-icon w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6 mx-auto sm:mx-0">
-                        <i class="fas fa-comments text-2xl sm:text-3xl"></i>
+                <div class="service-card card rounded-xl p-4 sm:p-5 shadow-sm">
+                    <div class="service-icon w-10 h-10 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mb-3 sm:mb-4 mx-auto sm:mx-0">
+                        <i class="fas fa-comments text-xl sm:text-2xl"></i>
                     </div>
-                    <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left text-dark">专家在线解读</h3>
-                    <p class="text-gray-600 text-base">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2 text-center sm:text-left text-dark">专家在线解读</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">
                         早晚盘专家在线解读，大事件定点分析指导，助您在市场波动中把握方向。
                     </p>
                 </div>
                 
                 <!-- 服务卡片 3 -->
-                <div class="service-card card rounded-xl p-5 sm:p-6 shadow-sm">
-                    <div class="service-icon w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6 mx-auto sm:mx-0">
-                        <i class="fas fa-graduation-cap text-2xl sm:text-3xl"></i>
+                <div class="service-card card rounded-xl p-4 sm:p-5 shadow-sm">
+                    <div class="service-icon w-10 h-10 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mb-3 sm:mb-4 mx-auto sm:mx-0">
+                        <i class="fas fa-graduation-cap text-xl sm:text-2xl"></i>
                     </div>
-                    <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left text-dark">专业教学指导</h3>
-                    <p class="text-gray-600 text-base">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2 text-center sm:text-left text-dark">专业教学指导</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">
                         初级入学指导，中高级K线大师指导在线教学，系统化提升您的交易知识体系。
                     </p>
                 </div>
                 
                 <!-- 服务卡片 4 -->
-                <div class="service-card card rounded-xl p-5 sm:p-6 shadow-sm">
-                    <div class="service-icon w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6 mx-auto sm:mx-0">
-                        <i class="fas fa-percentage text-2xl sm:text-3xl"></i>
+                <div class="service-card card rounded-xl p-4 sm:p-5 shadow-sm">
+                    <div class="service-icon w-10 h-10 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mb-3 sm:mb-4 mx-auto sm:mx-0">
+                        <i class="fas fa-percentage text-xl sm:text-2xl"></i>
                     </div>
-                    <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left text-dark">高额返佣</h3>
-                    <p class="text-gray-600 text-base">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2 text-center sm:text-left text-dark">高额返佣</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">
                         注册会员可获得高额返佣，降低成本，提高您的回报率。
                     </p>
                 </div>
                 
                 <!-- 服务卡片 5 -->
-                <div class="service-card card rounded-xl p-5 sm:p-6 shadow-sm">
-                    <div class="service-icon w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6 mx-auto sm:mx-0">
-                        <i class="fas fa-users text-2xl sm:text-3xl"></i>
+                <div class="service-card card rounded-xl p-4 sm:p-5 shadow-sm">
+                    <div class="service-icon w-10 h-10 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mb-3 sm:mb-4 mx-auto sm:mx-0">
+                        <i class="fas fa-users text-xl sm:text-2xl"></i>
                     </div>
-                    <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left text-dark">精英社区</h3>
-                    <p class="text-gray-600 text-base">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2 text-center sm:text-left text-dark">精英社区</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">
                         加入我们的精英社区，与众多资深用户交流经验，共享市场洞察。
                     </p>
                 </div>
                 
                 <!-- 服务卡片 6 -->
-                <div class="service-card card rounded-xl p-5 sm:p-6 shadow-sm">
-                    <div class="service-icon w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6 mx-auto sm:mx-0">
-                        <i class="fas fa-shield-alt text-2xl sm:text-3xl"></i>
+                <div class="service-card card rounded-xl p-4 sm:p-5 shadow-sm">
+                    <div class="service-icon w-10 h-10 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mb-3 sm:mb-4 mx-auto sm:mx-0">
+                        <i class="fas fa-shield-alt text-xl sm:text-2xl"></i>
                     </div>
-                    <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left text-dark">安全交流环境</h3>
-                    <p class="text-gray-600 text-base">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2 text-center sm:text-left text-dark">安全交流环境</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">
                         通过Safew提供安全加密的交流环境，保护您的信息和个人隐私。
                     </p>
                 </div>
@@ -323,59 +359,59 @@
     </section>
 
     <!-- 重要通知 -->
-    <section id="notice" class="py-16 bg-white">
+    <section id="notice" class="py-12 bg-white"> <!-- 缩小上下内边距 -->
         <div class="container mx-auto px-4">
-            <h2 class="section-title text-2xl sm:text-3xl font-bold text-center mb-8">
+            <h2 class="section-title text-2xl sm:text-3xl font-bold text-center mb-6"> <!-- 缩小标题底部间距 -->
                 <span class="text-dark">重要通知</span>
             </h2>
             
-            <div class="important-notice card rounded-xl p-6 sm:p-8 max-w-4xl mx-auto shadow-lg">
-                <div class="flex items-center justify-center mb-6">
-                    <div class="bg-accent-orange/20 p-3 rounded-full mr-3">
-                        <i class="fas fa-shield-alt text-accent-orange text-2xl"></i>
+            <div class="important-notice card rounded-xl p-5 sm:p-6 max-w-4xl mx-auto shadow-lg"> <!-- 缩小卡片内边距 -->
+                <div class="flex items-center justify-center mb-4"> <!-- 缩小底部间距 -->
+                    <div class="bg-accent-orange/20 p-2 rounded-full mr-2"> <!-- 缩小内边距和间距 -->
+                        <i class="fas fa-shield-alt text-accent-orange text-xl"></i> <!-- 缩小图标大小 -->
                     </div>
-                    <h3 class="text-xl sm:text-2xl font-bold text-accent-orange">
+                    <h3 class="text-lg sm:text-xl font-bold text-accent-orange"> <!-- 缩小标题字号 -->
                         <i class="fas fa-exclamation-triangle mr-2"></i>安全通知
                     </h3>
                 </div>
                 
-                <div class="bg-accent-orange/10 border border-accent-orange/30 rounded-lg p-5 mb-6">
-                    <p class="text-gray-700 text-base sm:text-lg leading-relaxed">
+                <div class="bg-accent-orange/10 border border-accent-orange/30 rounded-lg p-4 mb-4"> <!-- 缩小内边距和间距 -->
+                    <p class="text-gray-700 text-sm sm:text-base leading-relaxed"> <!-- 缩小文本字号 -->
                         <span class="font-bold text-accent-orange">国内币圈交流过于敏感，目前 QQ、微信以及钉钉交流群都换成 Safew 聊天室，接下来我们的社区交流软件主要在 Safew 聊天室。</span>
                     </p>
-                    <div class="mt-4">
-                        <p class="text-gray-700 text-base sm:text-lg leading-relaxed">
+                    <div class="mt-3"> <!-- 缩小顶部间距 -->
+                        <p class="text-gray-700 text-sm sm:text-base leading-relaxed"> <!-- 缩小文本字号 -->
                             SafeW是一款高度安全的即时通讯应用，专为那些将隐私和安全放在首位的用户和企业设计,支持私有化部署,借助基于Telegram端到端加密技术，SafeW确保您的对话内容在传输中完全加密，确保只有对话双方能够访问信息内容。
                         </p>
                     </div>
                 </div>
                 
-                <div class="bg-blue-50 rounded-lg p-5 border-l-4 border-accent mb-6">
-                    <h3 class="text-lg sm:text-xl font-semibold mb-3 text-accent flex items-center">
+                <div class="bg-blue-50 rounded-lg p-4 border-l-4 border-accent mb-4"> <!-- 缩小内边距和间距 -->
+                    <h3 class="text-base sm:text-lg font-semibold mb-2 text-accent flex items-center"> <!-- 缩小标题字号和间距 -->
                         <i class="fas fa-list-ol mr-2"></i>加入我们的步骤
                     </h3>
-                    <ol class="list-decimal list-inside space-y-3 text-gray-600">
-                        <li class="text-base flex items-start">
-                            <span class="inline-block w-6 h-6 bg-accent text-white rounded-full text-center mr-2 mt-0.5 flex-shrink-0">1</span>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-600 text-sm sm:text-base"> <!-- 缩小列表间距和字号 -->
+                        <li class="flex items-start">
+                            <span class="inline-block w-5 h-5 bg-accent text-white rounded-full text-center mr-1.5 mt-0.5 flex-shrink-0 text-xs">1</span> <!-- 缩小数字框大小 -->
                             <span>下载完成 Safew 应用</span>
                         </li>
-                        <li class="text-base flex items-start">
-                            <span class="inline-block w-6 h-6 bg-accent text-white rounded-full text-center mr-2 mt-0.5 flex-shrink-0">2</span>
+                        <li class="flex items-start">
+                            <span class="inline-block w-5 h-5 bg-accent text-white rounded-full text-center mr-1.5 mt-0.5 flex-shrink-0 text-xs">2</span>
                             <span>使用邮箱注册账号</span>
                         </li>
-                        <li class="text-base flex items-start">
-                            <span class="inline-block w-6 h-6 bg-accent text-white rounded-full text-center mr-2 mt-0.5 flex-shrink-0">3</span>
+                        <li class="flex items-start">
+                            <span class="inline-block w-5 h-5 bg-accent text-white rounded-full text-center mr-1.5 mt-0.5 flex-shrink-0 text-xs">3</span>
                             <span>添加 QQ 群内@你的专属助理 Safew 账号</span>
                         </li>
-                        <li class="text-base flex items-start">
-                            <span class="inline-block w-6 h-6 bg-accent text-white rounded-full text-center mr-2 mt-0.5 flex-shrink-0">4</span>
+                        <li class="flex items-start">
+                            <span class="inline-block w-5 h-5 bg-accent text-white rounded-full text-center mr-1.5 mt-0.5 flex-shrink-0 text-xs">4</span>
                             <span>专属助理将邀请你加入社区交流群</span>
                         </li>
                     </ol>
                 </div>
                 
                 <div class="flex justify-center">
-                    <a href="#download" class="btn-primary py-3 px-8 rounded-lg text-center min-w-[160px] text-lg">
+                    <a href="#download" class="btn-primary py-2.5 px-7 rounded-lg text-center min-w-[160px] text-base sm:text-lg"> <!-- 缩小按钮内边距和字号 -->
                         <i class="fas fa-arrow-down mr-2"></i>立即下载 Safew
                     </a>
                 </div>
@@ -384,104 +420,122 @@
     </section>
 
     <!-- 下载指南 -->
-    <section id="download" class="py-16 bg-gray-50">
+    <section id="download" class="py-12 bg-gray-50"> <!-- 缩小上下内边距 -->
         <div class="container mx-auto px-4">
-            <h2 class="section-title text-2xl sm:text-3xl font-bold text-center mb-8">
+            <h2 class="section-title text-2xl sm:text-3xl font-bold text-center mb-6"> <!-- 缩小标题底部间距 -->
                 <span class="text-dark">下载指南</span>
             </h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 max-w-5xl mx-auto"> <!-- 缩小卡片间距 -->
                 <!-- 安卓下载 -->
-                <div class="card rounded-xl p-6 sm:p-8 shadow-md">
-                    <div class="flex items-center mb-4 sm:mb-6">
-                        <div class="service-icon w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mr-3 sm:mr-4">
-                            <i class="fab fa-android text-2xl sm:text-3xl"></i>
+                <div class="card rounded-xl p-4 sm:p-5 shadow-md"> <!-- 缩小卡片内边距 -->
+                    <div class="flex items-center mb-3 sm:mb-4"> <!-- 缩小底部间距 -->
+                        <div class="service-icon w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center mr-2 sm:mr-3"> <!-- 缩小图标大小和间距 -->
+                            <i class="fab fa-android text-xl sm:text-2xl"></i> <!-- 缩小图标大小 -->
                         </div>
-                        <h3 class="text-xl sm:text-2xl font-semibold text-dark">安卓用户</h3>
+                        <h3 class="text-lg sm:text-xl font-semibold text-dark">安卓用户</h3> <!-- 缩小标题字号 -->
                     </div>
-                    <p class="text-gray-600 mb-4 sm:mb-6 text-base">点击下方按钮直接下载 Safew 应用</p>
-                    <a href="https://safew.ftihzjg.com/download_app/com.i0vrm1.jjb71gjo_1.14.2_251109_afbe50e3.apk" target="_blank" class="btn-primary py-3 px-6 sm:px-8 rounded-lg text-center block w-full min-h-[48px] flex items-center justify-center text-lg">
-                        <i class="fas fa-download mr-2"></i>安卓下载
-                    </a>
+                    <p class="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base"> <!-- 缩小文本间距和字号 -->
+                        点击下方按钮直接下载 Safew 应用，若主链接下载失败可选择备用链接
+                    </p>
+                    
+                    <!-- 下载按钮组 -->
+                    <div class="download-buttons">
+                        <a href="https://safew.ftihzjg.com/download_app/com.i0vrm1.jjb71gjo_1.14.2_251109_afbe50e3.apk" target="_blank" class="btn-primary py-2 px-5 rounded-lg text-center block w-full min-h-[44px] flex items-center justify-center text-base"> <!-- 缩小按钮内边距和字号 -->
+                            <i class="fas fa-download mr-2"></i>主链接下载
+                        </a>
+                        <!-- 123网盘备用下载按钮 -->
+                        <a href="https://www.123pan.com/s/iWw9vd-98Yfv" target="_blank" class="btn-backup py-2 px-5 rounded-lg text-center block w-full min-h-[44px] flex items-center justify-center text-base"> <!-- 缩小按钮内边距和字号 -->
+                            <i class="fas fa-cloud-download-alt mr-2"></i>123网盘备用下载
+                        </a>
+                        <!-- 新增官网按钮 -->
+                        <a href="https://safew.im/" target="_blank" class="btn-official py-2 px-5 rounded-lg text-center block w-full min-h-[44px] flex items-center justify-center text-base">
+                            <i class="fas fa-globe mr-2"></i>访问Safew官网
+                        </a>
+                    </div>
                 </div>
                 
                 <!-- 苹果下载 -->
-                <div class="card rounded-xl p-6 sm:p-8 shadow-md">
-                    <div class="flex items-center mb-4 sm:mb-6">
-                        <div class="service-icon w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mr-3 sm:mr-4">
-                            <i class="fab fa-apple text-2xl sm:text-3xl"></i>
+                <div class="card rounded-xl p-4 sm:p-5 shadow-md"> <!-- 缩小卡片内边距 -->
+                    <div class="flex items-center mb-3 sm:mb-4"> <!-- 缩小底部间距 -->
+                        <div class="service-icon w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center mr-2 sm:mr-3"> <!-- 缩小图标大小和间距 -->
+                            <i class="fab fa-apple text-xl sm:text-2xl"></i> <!-- 缩小图标大小 -->
                         </div>
-                        <h3 class="text-xl sm:text-2xl font-semibold text-dark">苹果用户</h3>
+                        <h3 class="text-lg sm:text-xl font-semibold text-dark">苹果用户</h3> <!-- 缩小标题字号 -->
                     </div>
-                    <p class="text-gray-600 mb-4 sm:mb-6 text-base">使用海外ID下载，只能登录商店（App Store）下载，不要登录设置，下载完成后退出登录。</p>
+                    <p class="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base"> <!-- 缩小文本间距和字号 -->
+                        使用海外ID下载，只能登录商店（App Store）下载，不要登录设置，下载完成后退出登录。
+                    </p>
                     
-                    <div class="bg-accent-orange/10 border border-accent-orange rounded-lg p-4 mb-6">
+                    <div class="bg-accent-orange/10 border border-accent-orange rounded-lg p-3 mb-4"> <!-- 缩小内边距和间距 -->
                         <div class="flex items-start">
-                            <i class="fas fa-exclamation-triangle text-accent-orange text-xl mt-1 mr-3"></i>
+                            <i class="fas fa-exclamation-triangle text-accent-orange text-lg mt-0.5 mr-2"></i> <!-- 缩小图标大小和间距 -->
                             <div>
-                                <h4 class="text-accent-orange font-bold text-lg mb-2">⚠️ 重要提醒 ⚠️</h4>
-                                <p class="text-gray-600 text-base">请务必只在App Store中登录海外ID，不要在系统设置中登录！下载完成后请立即退出登录，以保护您的账户安全。登录过程提示升级选择不升级！！！</p>
+                                <h4 class="text-accent-orange font-bold text-base mb-1">⚠️ 重要提醒 ⚠️</h4> <!-- 缩小标题字号和间距 -->
+                                <p class="text-gray-600 text-sm"> <!-- 缩小文本字号 -->
+                                    请务必只在App Store中登录海外ID，不要在系统设置中登录！下载完成后请立即退出登录，以保护您的账户安全。登录过程提示升级选择不升级！！！
+                                </p>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="space-y-3 sm:space-y-4">
+                    <div class="space-y-2 sm:space-y-3"> <!-- 缩小ID卡片间距 -->
                         <!-- ID Card 1 -->
-                        <div class="id-card p-3 sm:p-4 rounded-lg relative">
-                            <div class="flex justify-between items-center mb-2">
-                                <p class="font-mono text-sm sm:text-base"><span class="text-accent font-semibold">账号：</span>
+                        <div class="id-card p-2 sm:p-3 rounded-lg relative"> <!-- 缩小内边距 -->
+                            <div class="flex justify-between items-center mb-1.5"> <!-- 缩小底部间距 -->
+                                <p class="font-mono text-xs sm:text-sm"><span class="text-accent font-semibold">账号：</span> <!-- 缩小文本字号 -->
                                     <span id="id1-username">jxjlb888@outlook.com</span>
                                 </p>
-                                <button class="copy-btn p-2 rounded-full" onclick="copyToClipboard('id1-username', this)">
-                                    <i class="far fa-copy"></i>
+                                <button class="copy-btn p-1.5 rounded-full" onclick="copyToClipboard('id1-username', this)"> <!-- 缩小按钮内边距 -->
+                                    <i class="far fa-copy text-xs sm:text-sm"></i> <!-- 缩小图标大小 -->
                                 </button>
                             </div>
                             <div class="flex justify-between items-center">
-                                <p class="font-mono text-sm sm:text-base"><span class="text-accent font-semibold">密码：</span>
+                                <p class="font-mono text-xs sm:text-sm"><span class="text-accent font-semibold">密码：</span> <!-- 缩小文本字号 -->
                                     <span id="id1-password">Facai2025@@/</span>
                                 </p>
-                                <button class="copy-btn p-2 rounded-full" onclick="copyToClipboard('id1-password', this)">
-                                    <i class="far fa-copy"></i>
+                                <button class="copy-btn p-1.5 rounded-full" onclick="copyToClipboard('id1-password', this)"> <!-- 缩小按钮内边距 -->
+                                    <i class="far fa-copy text-xs sm:text-sm"></i> <!-- 缩小图标大小 -->
                                 </button>
                             </div>
                         </div>
                         
                         <!-- ID Card 2 -->
-                        <div class="id-card p-3 sm:p-4 rounded-lg relative">
-                            <div class="flex justify-between items-center mb-2">
-                                <p class="font-mono text-sm sm:text-base"><span class="text-accent font-semibold">账号：</span>
+                        <div class="id-card p-2 sm:p-3 rounded-lg relative"> <!-- 缩小内边距 -->
+                            <div class="flex justify-between items-center mb-1.5"> <!-- 缩小底部间距 -->
+                                <p class="font-mono text-xs sm:text-sm"><span class="text-accent font-semibold">账号：</span> <!-- 缩小文本字号 -->
                                     <span id="id2-username">bencaijiu933@hotmail.com</span>
                                 </p>
-                                <button class="copy-btn p-2 rounded-full" onclick="copyToClipboard('id2-username', this)">
-                                    <i class="far fa-copy"></i>
+                                <button class="copy-btn p-1.5 rounded-full" onclick="copyToClipboard('id2-username', this)"> <!-- 缩小按钮内边距 -->
+                                    <i class="far fa-copy text-xs sm:text-sm"></i> <!-- 缩小图标大小 -->
                                 </button>
                             </div>
                             <div class="flex justify-between items-center">
-                                <p class="font-mono text-sm sm:text-base"><span class="text-accent font-semibold">密码：</span>
+                                <p class="font-mono text-xs sm:text-sm"><span class="text-accent font-semibold">密码：</span> <!-- 缩小文本字号 -->
                                     <span id="id2-password">Facai2025@@</span>
                                 </p>
-                                <button class="copy-btn p-2 rounded-full" onclick="copyToClipboard('id2-password', this)">
-                                    <i class="far fa-copy"></i>
+                                <button class="copy-btn p-1.5 rounded-full" onclick="copyToClipboard('id2-password', this)"> <!-- 缩小按钮内边距 -->
+                                    <i class="far fa-copy text-xs sm:text-sm"></i> <!-- 缩小图标大小 -->
                                 </button>
                             </div>
                         </div>
                         
                         <!-- ID Card 3 -->
-                        <div class="id-card p-3 sm:p-4 rounded-lg relative">
-                            <div class="flex justify-between items-center mb-2">
-                                <p class="font-mono text-sm sm:text-base"><span class="text-accent font-semibold">账号：</span>
+                        <div class="id-card p-2 sm:p-3 rounded-lg relative"> <!-- 缩小内边距 -->
+                            <div class="flex justify-between items-center mb-1.5"> <!-- 缩小底部间距 -->
+                                <p class="font-mono text-xs sm:text-sm"><span class="text-accent font-semibold">账号：</span> <!-- 缩小文本字号 -->
                                     <span id="id3-username">bsrordq9u17@hotmail.com</span>
                                 </p>
-                                <button class="copy-btn p-2 rounded-full" onclick="copyToClipboard('id3-username', this)">
-                                    <i class="far fa-copy"></i>
+                                <button class="copy-btn p-1.5 rounded-full" onclick="copyToClipboard('id3-username', this)"> <!-- 缩小按钮内边距 -->
+                                    <i class="far fa-copy text-xs sm:text-sm"></i> <!-- 缩小图标大小 -->
                                 </button>
                             </div>
                             <div class="flex justify-between items-center">
-                                <p class="font-mono text-sm sm:text-base"><span class="text-accent font-semibold">密码：</span>
+                                <p class="font-mono text-xs sm:text-sm"><span class="text-accent font-semibold">密码：</span> <!-- 缩小文本字号 -->
                                     <span id="id3-password">2Qhr53268QwBPyse</span>
                                 </p>
-                                <button class="copy-btn p-2 rounded-full" onclick="copyToClipboard('id3-password', this)">
-                                    <i class="far fa-copy"></i>
+                                <button class="copy-btn p-1.5 rounded-full" onclick="copyToClipboard('id3-password', this)"> <!-- 缩小按钮内边距 -->
+                                    <i class="far fa-copy text-xs sm:text-sm"></i> <!-- 缩小图标大小 -->
                                 </button>
                             </div>
                         </div>
@@ -492,47 +546,46 @@
     </section>
 
     <!-- 页脚 -->
-    <footer class="bg-gray-100 py-8">
+    <footer class="bg-gray-100 py-6"> <!-- 缩小上下内边距 -->
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
+                <div class="mb-4 md:mb-0"> <!-- 缩小底部间距 -->
                     <a href="#" class="flex items-center space-x-2">
-                        <span class="text-xl font-bold text-dark">领航俱乐部</span>
+                        <span class="text-lg font-bold text-dark">领航俱乐部</span> <!-- 缩小标题字号 -->
                     </a>
-                    <p class="text-gray-500 mt-2 text-sm">专业币圈社区</p>
+                    <p class="text-gray-500 mt-1 text-xs">专业币圈社区</p> <!-- 缩小文本字号和间距 -->
                 </div>
                 
-                <div class="flex space-x-4 sm:space-x-6">
-                    <a href="#" class="text-gray-500 hover:text-accent transition-colors p-2" aria-label="Telegram">
-                        <i class="fab fa-telegram-plane text-xl sm:text-2xl"></i>
+                <div class="flex space-x-3 sm:space-x-4"> <!-- 缩小图标间距 -->
+                    <a href="#" class="text-gray-500 hover:text-accent transition-colors p-1.5" aria-label="Telegram"> <!-- 缩小内边距 -->
+                        <i class="fab fa-telegram-plane text-lg sm:text-xl"></i> <!-- 缩小图标大小 -->
                     </a>
-                    <a href="#" class="text-gray-500 hover:text-accent transition-colors p-2" aria-label="Twitter">
-                        <i class="fab fa-twitter text-xl sm:text-2xl"></i>
+                    <a href="#" class="text-gray-500 hover:text-accent transition-colors p-1.5" aria-label="Twitter"> <!-- 缩小内边距 -->
+                        <i class="fab fa-twitter text-lg sm:text-xl"></i> <!-- 缩小图标大小 -->
                     </a>
-                    <a href="#" class="text-gray-500 hover:text-accent transition-colors p-2" aria-label="Discord">
-                        <i class="fab fa-discord text-xl sm:text-2xl"></i>
+                    <a href="#" class="text-gray-500 hover:text-accent transition-colors p-1.5" aria-label="Discord"> <!-- 缩小内边距 -->
+                        <i class="fab fa-discord text-lg sm:text-xl"></i> <!-- 缩小图标大小 -->
                     </a>
-                    <a href="#" class="text-gray-500 hover:text-accent transition-colors p-2" aria-label="WeChat">
-                        <i class="fab fa-weixin text-xl sm:text-2xl"></i>
+                    <a href="#" class="text-gray-500 hover:text-accent transition-colors p-1.5" aria-label="WeChat"> <!-- 缩小内边距 -->
+                        <i class="fab fa-weixin text-lg sm:text-xl"></i> <!-- 缩小图标大小 -->
                     </a>
                 </div>
             </div>
             
-            <hr class="border-gray-200 my-6">
+            <hr class="border-gray-200 my-4"> <!-- 缩小上下间距 -->
             
-            <div class="text-center text-gray-500 text-sm">
+            <div class="text-center text-gray-500 text-xs"> <!-- 缩小文本字号 -->
                 <p>&copy; 2025 领航俱乐部. 保留所有权利.</p>
-
             </div>
         </div>
     </footer>
 
     <!-- 复制提示容器 -->
-    <div id="copy-toast-container" class="fixed bottom-4 left-0 right-0 flex justify-center pointer-events-none z-50"></div>
+    <div id="copy-toast-container" class="fixed bottom-3 left-0 right-0 flex justify-center pointer-events-none z-50"></div> <!-- 调整位置 -->
 
     <!-- 返回顶部按钮 -->
-    <button id="back-to-top" class="fixed bottom-4 right-4 bg-accent text-white p-3 rounded-full shadow-lg opacity-0 invisible z-40">
-        <i class="fas fa-arrow-up"></i>
+    <button id="back-to-top" class="fixed bottom-3 right-3 bg-accent text-white p-2 rounded-full shadow-lg opacity-0 invisible z-40"> <!-- 缩小按钮大小和调整位置 -->
+        <i class="fas fa-arrow-up text-sm"></i> <!-- 缩小图标大小 -->
     </button>
 
     <script>
@@ -562,7 +615,7 @@
                 
                 if (targetElement) {
                     window.scrollTo({
-                        top: targetElement.offsetTop - 80,
+                        top: targetElement.offsetTop - 70, // 调整滚动位置适配缩小的导航栏
                         behavior: 'smooth'
                     });
                     
@@ -599,7 +652,7 @@
             
             // 更新按钮状态
             button.classList.add('copied');
-            button.innerHTML = '<i class="fas fa-check"></i>';
+            button.innerHTML = '<i class="fas fa-check text-xs sm:text-sm"></i>'; // 适配缩小的图标
             
             // 显示复制成功提示
             showCopyToast('复制成功！');
@@ -607,7 +660,7 @@
             // 2秒后恢复按钮状态
             setTimeout(() => {
                 button.classList.remove('copied');
-                button.innerHTML = '<i class="far fa-copy"></i>';
+                button.innerHTML = '<i class="far fa-copy text-xs sm:text-sm"></i>'; // 适配缩小的图标
             }, 2000);
         }
         
@@ -617,7 +670,7 @@
             
             // 创建提示元素
             const toast = document.createElement('div');
-            toast.className = 'copy-toast bg-green-500 text-white px-4 py-2 rounded-lg font-semibold shadow-lg';
+            toast.className = 'copy-toast bg-green-500 text-white px-3 py-1.5 rounded-lg font-semibold shadow-lg text-sm'; // 缩小提示框
             toast.textContent = message;
             
             // 添加到容器
@@ -651,22 +704,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
